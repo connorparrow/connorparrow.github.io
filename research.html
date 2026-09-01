@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Connor Parrow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="site-name" href="index.html">Connor Parrow</a>
+    <nav class="site-nav">
+      <a href="index.html">About</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications &amp; Talks</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-body">
+    <p class="eyebrow">Research interests</p>
+    <h1>Numerical methods for coupled PDE systems</h1>
+    <p>
+      My work centers on the design and analysis of partitioned numerical
+      methods for multiphysics problems, particularly systems that couple
+      fluid flow with deformable, porous, or multiphase media. Below is a
+      short overview of my current areas of focus.
+    </p>
+
+
+    <div class="interest-block">
+      <h3>Stability and error analysis of partitioned schemes</h3>
+      <p>
+        A central part of my work is establishing the mathematical
+        properties of the methods I design. I work on proving stability (unconditional
+        or conditional, depending on the degree of partitioning), analyzing
+        convergence rates, and identifying how choices like time
+        discretization or subiteration structure affect accuracy and
+        computational cost.
+      </p>
+    </div>
+
+    <div class="interest-block">
+      <h3>Time-stepping schemes for multiphysics coupling</h3>
+      <p>
+        I am interested in how the formulation of individual subproblems and
+        the structure of the time-stepping scheme affect the overall
+        method &mdash; for example, refactorizations of Cauchy-type schemes
+        that reach second-order accuracy through recursive correction, and
+        dual-mixed formulations that preserve mass conservation across a
+        fluid-poroelastic interface.
+      </p>
+    </div>
+
+    <div class="interest-block">
+      <h3>Fluid-poroelastic structure interaction</h3>
+      <p>
+        Fluid-poroelastic structure interaction (FPSI) models the coupling
+        of the time-dependent Stokes equations with the Biot equations of
+        poroelasticity, with applications in biological systems, biomedical
+        engineering, and geophysics. I develop and analyze Robin-Robin
+        partitioned schemes for FPSI, including methods that fully partition
+        the system into mechanics, Darcy-flow, and fluid subproblems, so
+        that each physical process can be solved with a smaller, more
+        manageable system while preserving the interactions between them.
+      </p>
+    </div>
+
+    <div class="interest-block">
+      <h3>Broader applications</h3>
+      <p>
+        Beyond FPSI, I am extending these partitioned-method techniques to
+        other coupled PDE systems, including a project on two-phase flow
+        using a coupled Cahn-Hilliard-Navier-Stokes system. More broadly, I
+        am interested in problems involving fluid dynamics, multiphase flow,
+        porous-media flow, elasticity, and other biologically or
+        geophysically motivated PDE models. I am especially interested in problems where coupling
+        different physical processes raises open questions about stability,
+        accuracy, conservation, or computational efficiency.
+      </p>
+    </div>
+
+    
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> Connor Parrow
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
