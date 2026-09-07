@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me — [Your Name]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="site-name" href="index.html">[Your Name]</a>
+    <nav class="site-nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications &amp; Talks</a>
+      <a href="about-me.html" aria-current="page">About Me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-body">
+    <p class="eyebrow">Outside of research</p>
+    <h1>About me</h1>
+    <p>
+      Beyond the mathematics, here's a little more about who I am. [Write a
+      sentence or two introducing this page in your own voice &mdash; it can
+      be more casual than the professional About page.]
+    </p>
+
+    <!--
+      EXAMPLE: an inline photo, same reusable style as the one on the
+      About page. Copy this block wherever you'd like a photo between
+      paragraphs, then update the src/alt/caption.
+    -->
+    <figure class="inline-photo">
+      <div class="photo-placeholder" style="aspect-ratio: 4/3;">
+        Photo:<br>save as<br><code>images/about-me-1.jpg</code>
+      </div>
+      <!-- <img src="images/about-me-1.jpg" alt="Description of the photo"> -->
+      <figcaption>Caption text goes here, e.g. "Hiking [Trail name], 2025."</figcaption>
+    </figure>
+
+    <div class="interest-block">
+      <h3>Hobbies &amp; interests</h3>
+      <p>
+        [What do you like to do outside of work? A few sentences on hobbies,
+        sports, music, reading, cooking, whatever feels true to you &mdash;
+        this is the most natural place for a search committee member to
+        connect with you as a person.]
+      </p>
+    </div>
+
+    <div class="interest-block">
+      <h3>Travel &amp; places</h3>
+      <p>
+        [Anywhere you love to go, places you've lived, or trips that stuck
+        with you. Optional section &mdash; delete this block if it doesn't
+        fit.]
+      </p>
+    </div>
+
+    <div class="interest-block">
+      <h3>A few other things</h3>
+      <p>
+        [Anything else you'd like people to know &mdash; pets, volunteer
+        work, a favorite local coffee shop near campus, a running joke with
+        your students. Keep it short and genuine.]
+      </p>
+    </div>
+
+    <div class="section-note">
+      This page is a starting scaffold &mdash; edit, reorder, add photos,
+      or delete sections in <code>about-me.html</code> until it sounds like
+      you. It doesn't need to be long; two or three short sections are
+      plenty.
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> [Your Name]
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
