@@ -1,6 +1,6 @@
 # Personal academic website
 
-A simple three-page static site: About, Research, Publications & Talks.
+A simple four-page static site: Home, About Me, Research, Publications & Talks.
 No build tools required — just HTML, CSS, and a tiny bit of JS.
 
 ## Files to edit
